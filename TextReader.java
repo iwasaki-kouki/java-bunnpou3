@@ -14,7 +14,7 @@ public class TextReader {
         this.path = path;
     }
     private void execute() {
-        List <Integer>valueList = new ObjectList<>();
+        List <Integer> valueList = new ObjectList<>();
         try (FileReader fr = new FileReader(path);BufferedReader br = new BufferedReader(fr);){
             String line =null;
             while ((line = br.readLine()) != null) {
